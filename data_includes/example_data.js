@@ -2,6 +2,32 @@
 Simple Ibex ABX experiment
 */
 
+function modifyRunningOrder(ro) {
+    ro[97].push(new DynamicElement(
+                           "Message",
+                            { html: "<p>Vous pouvez prendre une pause.</p>", 
+                             hideProgressBar: 'true',
+                             continueMessage: "Veuillez cliquer ici pour continuer."},
+                             true
+                             ));
+    ro[153].push(new DynamicElement(
+                           "Message",
+                            { html: "<p>Vous pouvez prendre une pause.</p>", 
+                             hideProgressBar: 'true',
+                             continueMessage: "Veuillez cliquer ici pour continuer."},
+                             true
+                             ));
+    ro[213].push(new DynamicElement(
+                           "Message",
+                            { html: "<p>Vous pouvez prendre une pause.</p>", 
+                             hideProgressBar: 'true',
+                             continueMessage: "Veuillez cliquer ici pour continuer."},
+                             true
+                             ));
+
+    return ro;
+}
+
 var shuffleSequence = seq("intro", "explanation", "start_practice", 
 
 "practice_t00000027525", "practice_t00000018860", "practice_t00000019593", "practice_t00000008895", "practice_t00000103879", "practice_t00000008454", "practice_t00000009033", "practice_t00000074757",
