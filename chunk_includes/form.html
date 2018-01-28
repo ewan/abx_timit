@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Questionnaire </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    body {
+      text-align: left;
+      font-size: 88%;
+      font-family: Century Gothic;
+      text-align: left;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .body{
+      width: 100%;
+    }
+
+    form{
+      margin: 0 auto;
+      width: 90%;
+      clear: both;
+      padding: 2%;
+      border: 1px;
+      border-style: solid;
+      box-shadow: 10px 10px 5px #888888;
+      background-color: white;
+    }
+
+    input[type=submit] {
+      width: 135px;
+      height: 70px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+
+<body class="body">
+<form style="width: 40em;">
+<h1>Bienvenue !</h1>
+<p>
+Vous allez participer à une expérience de perception de la parole. Le but est d'approfondir votre compréhension des tâches comportementales utilisées en psycholinguistique. La participation à cette expérience est obligatoire pour le cours. <b>La participation à cette expérience est possible jusqu'au vendredi 2 février.</b> Les données recueillies ne seront pas utilisées pour la recherche.
+</p>
+<p>
+<b>Les résponses seront anonymes : </b><br>Les réponses que vous donnez ne seront pas liées à votre identité. Je demande votre nom et votre numéro d'étudiant seulement pour vérifier votre participation.
+</p>
+<p>
+<b>Si vous avez des problèmes : </b><br>Si vous avez des problèmes avec l'expérience, contactez-moi au plus vite.</p>
+
+
+<table>
+<!-- question with a small text box to answer, answer is obligatory -->
+<tr>
+  <td>Nom complet :</em></td></tr>
+<tr><td><input name="nom_complet" type="text" size="30" class="obligatory" /></td>
+</tr>
+<tr>
+  <td>Numéro d'étudiant :</em></td></tr>
+<tr><td><input name="numero_detudiant" type="text" size="30" class="obligatory" /></td>
+</tr>
+<tr>
+<td colspan="2"><label class="error" for="language"></label></td>
+</tr>
+<tr>
+  <td>Vous étiez principalement exposé(e) à quelle(s) langue(s) pendant les six premières
+  années de votre vie ? <em>N'incluez aucune langue à laquelle vous estimez que vous étiez
+  exposé(e) moins de 10% du temps pendant les six premières années de votre vie.</em></td></tr>
+<tr><td><input name="langue_maternelle" type="text" size="30" class="obligatory" /></td>
+</tr>
+<!-- question with a big text box to answer, answer is NOT obligatory -->
+<tr>
+  <td colspan="2">Quelles autres langues parlez-vous ?</td>
+</tr>
+<tr>
+  <td colspan="2">
+    <textarea name="otherlang" rows="5" cols="40"></textarea>
+  </td>
+</tr>
+
+
+</table>
+</form>
+
+
+
+
+
+
+</body>
+</html>
